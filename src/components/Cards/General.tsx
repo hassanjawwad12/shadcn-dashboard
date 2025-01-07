@@ -1,6 +1,6 @@
 'use client'
-import { ResponsiveBump } from '@nivo/bump'
-import { Card,CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { ResponsiveBump } from '@nivo/bump';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 
 interface BumpData {
   id: string;
@@ -37,7 +37,6 @@ const MyResponsiveBump = ({ data }: MyResponsiveBumpProps) => {
         legend: '',
         legendPosition: 'middle',
         legendOffset: -36,
-        truncateTickAt: 0
       }}
       axisBottom={{
         tickSize: 5,
@@ -46,7 +45,6 @@ const MyResponsiveBump = ({ data }: MyResponsiveBumpProps) => {
         legend: '',
         legendPosition: 'middle',
         legendOffset: 32,
-        truncateTickAt: 0
       }}
       axisLeft={{
         tickSize: 5,
@@ -55,7 +53,6 @@ const MyResponsiveBump = ({ data }: MyResponsiveBumpProps) => {
         legend: 'ranking',
         legendPosition: 'middle',
         legendOffset: -40,
-        truncateTickAt: 0
       }}
       margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
       axisRight={null}
@@ -188,20 +185,17 @@ const General = () => {
   ];
 
   return (
-    <Card className='w-full'>
-        <CardHeader>
-            <CardTitle>
-                 Analytics
-            </CardTitle>
-            <CardDescription>
-               These are the results of this week 
-            </CardDescription>
-        </CardHeader>
-        <CardContent className=' h-[400px] grid gap-4'>
+    <Card className="w-full">
+      <CardHeader>
+        <CardTitle>Analytics</CardTitle>
+        <CardDescription>These are the results of this week</CardDescription>
+      </CardHeader>
+      <CardContent className="grid gap-4 h-[400px]">
         <MyResponsiveBump data={data} />
-        </CardContent>
+      </CardContent>
     </Card>
   );
 };
 
 export default General;
+
