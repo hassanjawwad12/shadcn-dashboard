@@ -8,6 +8,7 @@ import {
 import UserItem from "./UserItem";
 import { User, Mail, CreditCard, Bell, Settings, Lock, FileText } from 'lucide-react';
 import { JSX } from "react";
+import  Link  from "next/link";
 
 // Define types for the menu items and groups
 type MenuItem = {
@@ -92,7 +93,12 @@ const Sidebar = () => {
           </CommandList>
         </Command>
       </div>
-      <div>Settings</div>
+      <div>
+        <Link href="/team" className="flex items-center gap-2">
+          <Settings/>
+          <span>Team Settings</span>   
+         </Link>
+      </div>
     </div>
   );
 };
