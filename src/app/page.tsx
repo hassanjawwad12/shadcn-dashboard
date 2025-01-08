@@ -15,7 +15,7 @@ export default function Home() {
           <Calendar />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-[24px] h-[300px] overflow-hidden">
+      <div className="grid lg:grid-cols-3 gap-[24px] lg:h-[300px] overflow-hidden mb-[24px]">
         <Line />
         <Card className="overflow-y-scroll">
           <CardHeader>

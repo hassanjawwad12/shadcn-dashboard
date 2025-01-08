@@ -54,7 +54,7 @@ const MyResponsiveBump = ({ data }: MyResponsiveBumpProps) => {
         legendPosition: 'middle',
         legendOffset: -40,
       }}
-      margin={{ top: 40, right: 100, bottom: 40, left: 60 }}
+      margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
       axisRight={null}
     />
   );
