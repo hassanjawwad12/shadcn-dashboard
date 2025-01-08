@@ -29,11 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-start justify-between`}
       >
-        <Sidebar />
-        <main className=" h-full w-full grid pl-[300px]" >
+        <div className="min-w-[300px] min-h-screen border-r">
+          <Sidebar />
+        </div>
+        <main className=" h-full w-full grid" >
           <Header />
           <div className="p-8 ">
-          {children}
+            {children}
           </div>
         </main>
       </body>
