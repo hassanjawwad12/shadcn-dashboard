@@ -342,7 +342,7 @@ const Line = () => {
         <CardTitle>Stats</CardTitle>
         <CardDescription>These are the stats of years</CardDescription>
       </CardHeader>
-      <CardContent className="flex items-center h-[264px] w-full">
+      <CardContent className="flex items-center h-[220px] w-full">
         <MyResponsiveLine data={data} />
       </CardContent>
     </Card>
