@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import TrueFocus from '@/components/Effects/TrueFocus';
 
 type Member = {
   email: string;
@@ -53,7 +54,15 @@ const Members = () => {
   return (
     <div className="grid gap-4">
       <header>
-        <p className="text-[36px] font-[700]">Team Settings</p>
+        {/* <p className="text-[36px] font-[700]">Team Settings</p> */}
+        <TrueFocus
+          sentence="Team Settings"
+          manualMode={false}
+          blurAmount={5}
+          borderColor="blue"
+          animationDuration={2}
+          pauseBetweenAnimations={1}
+        />
       </header>
       <div className="border rounded">
         {members.map((member: Member, index: number) => (
